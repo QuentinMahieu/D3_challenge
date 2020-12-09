@@ -11,34 +11,45 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
       <div class="col-xs-12 col-md-12">
-        <h1>D3Times</h1>
+        <h1>Trends in the US in 2014</h1>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12  col-md-9">
+    <div class="row justify-content-center">
+      <div class="col-xs-12  col-md-12">
         <div id="scatter">
-          <!-- We append our chart here. -->
         </div>
       </div>
     </div>
-    <div class="row" id="main">
-      <div class="col-xs-12  col-md-12">
+    <div class="row justify-content-center" id="main">
+      <div class="col-xs-12  col-md-9 ">
         <div class="article">
           <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <p>As you navigate through the multiple charts available we can observe some intersting facts between<br> 
+            <strong>lack of healtcare, smokers and obesity</strong> versus <strong>poverty rate, median age and median household income</strong>:
+          </p>
+          <p id="first"><strong>Let's first compare the poverty rate :</strong><br>
+            We observe a ligth positive correlation between the poverty rate and the lack a healthcare. This means 
+            the more a region is poor the bigger the lack of healthcare.<br>
+            The observation is the same between the smokers and the poverty rate. This correlation seems a bit stronger than
+            the correlation between poverty and healthcare. The more smokers in a region, the higher the rate of poverty.<br>
+            We observe the same trend between obesity and poverty rate. The higher the poverty rate the higher the obesity rate.
+            This is the strongest positive correlation observed for the poverty rate.
+          </p>
+          <p id="first"><strong>Let's now compare the median age :</strong><br> 
+            We observe a small negative correlation between the median age and the lack of healthcare. This means that the younger,
+            the less someone subscribes to a healthcare.<br>
+            The correlation is less visible between the median age and the percent smokers in a region. A small positive correlation<br>
+            The median age doesn't explain either the obesity rate.</p>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <p id="first"><strong>Let's finally compare the household income :</strong><br>
+            We observe a small negative correlation between the median income and the lack of healthcare. This means that the less income,
+            the less someone subscribes to a healthcare.<br>
+            The negative correlation is much more visible between the median income and the percent smokers in a region.The less people earn, 
+            the more they smoke<br>
+            We observe the same trend between the obesity and the income, the obesity rate is higher where the median income is lower</p>
         </div>
       </div>
     </div>
@@ -46,7 +57,7 @@
 
   <!-- Footer-->
   <div id="footer">
-    <p>The Coding Boot Camp&copy;2020</p>
+    <p>The Coding Boot Camp&copy;2020 by Quentin Mahieu</p>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
