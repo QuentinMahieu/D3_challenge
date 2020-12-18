@@ -101,7 +101,7 @@ function makeResponsive() {
             .attr('class', 'd3-tip')
             .offset([40, 70])
             .html(function(d){
-                return (`${d.state}<br>${xlabel} ${d[chosenXAxis]}${percent}<br>${ylabel} ${d[chosenYAxis]}%`);
+                return (`${d[chosenXAxis]}<br>${xlabel} ${d[chosenXAxis]}${percent}<br>${ylabel} ${d[chosenYAxis]}%`);
         });
         circlesGroup.call(tip);
         circlesGroup.on('mouseover', function(d) {
